@@ -29,3 +29,6 @@ IN THE RIGHT CORNER OF THE PANEL, YOU HAVE AN ICON NAMED ROTATE, IT ROTATES THE 
 
 GPU is acting weirdly on firefox and everything ... If you could fix it and send me a report of how I can fix it... you are welcome. Everything uses software rendering.
 
+USER PASSWORD : kali
+
+DOWNLOAD: https://mega.nz/file/THBjwJYb#saguvIMVdS_VmLFzrKHUHLAPEDQCPdP45WMJ5iUP_9s
