@@ -1,47 +1,109 @@
-
-# Kali-Linux-for-Huawei-mediapad-T3-10
-linux ported via postmarket kernel 7.1.x with patches for huawei mediapad t3 10 agassi
-
-!!! I am not an official guy that makes this kind of things, I am an 15 year old... so please consider that if it does not work. If you would like, send me any issue on xda, but  also consider that I have school and other stuff... I do this as a hobby.
-
-<img width="650" height="300" alt="ok_edit" src="https://github.com/user-attachments/assets/ffc921f6-20ba-4eb6-af26-961a7fab4bf4" />
+# Kali Linux for Huawei MediaPad T3 10 (agassi)
 
 
-Added working sound, not perfect , but it works. 
-it uses kernel 7.1 by postmarket with ralink modules and added support for RTL8812AU 
 
-I configured the .dtb in kernel to support host mode usb, so adapters will work. 
+Linux port built using the postmarketOS kernel (v7.1.x) with custom patches for the **Huawei MediaPad T3 10 (agassi)**.
 
-Due to the changes at usb, usb networking does not work.
 
-Look please at /usr/local/bin for audio scripts, if you want to improve it.
 
-Freetube volume is weird... it chuckles like a radio, use vacuumtube... it comes pre-installed.
+> [!NOTE]
 
-If wifi does not work, look into the "cust" partition on your tablet to see the .ko.zst files necesarry. 
+> I am not an official developer doing this kind of thing, I am a 15-year-old... so please keep that in mind if something doesn't work. If you'd like, report any issues on XDA, but also consider that I have school and other responsibilities... I do this as a hobby!
 
-**I have not tested it for AGS-L09, only for AGS-W09 , 2 GB RAM and 16 storage.**
 
-A thing I strongly recommend... *[but risky]* is to shrink the system partition for extra storage, make it 1 MB, then put it where it should start in the partition map.
 
-Before every change, please create an edl backup with "edl rl . --loader=firehose.mbn"
+---
 
-At boot, it sometimes does not load the touch  module... just reboot it holding the power button, it should fix it.
 
-IN THE RIGHT CORNER OF THE PANEL, YOU HAVE AN ICON NAMED ROTATE, IT ROTATES THE SCREEN ALONG WITH THE TOUCH ON THE LEFT SIDE.
 
-I have used touchegg for the display as service, so when you touch the disply with two fingers, it will be counted as a right-click.
+## 🛠️ Features & Status
 
-It uses an 1GB file for V-RAM, as /swapfile, I strongly recomend letting it there, but if you are low on storage, you can delete it, it just won't run that smooth.
 
-GPU is acting weirdly on firefox and everything ... If you could fix it and send me a report of how I can fix it... you are welcome. Everything uses software rendering.
 
-USER PASSWORD : kali
+* **Audio:** Working sound (not perfect, but it works). Check `/usr/local/bin` for audio scripts if you want to improve them.
 
-**DOWNLOAD USERDATA: https://mega.nz/file/THBjwJYb#saguvIMVdS_VmLFzrKHUHLAPEDQCPdP45WMJ5iUP_9s**
-After downloading the userdata_sparse flash it with fastboot on userdata partition, so lk2nd will see it
+* **Volume Issues:** FreeTube audio can sound weird (crackling like a radio); use **VacuumTube** instead, which comes pre-installed.
 
-!!!ONLY WORKS AFTER fastboot flash boot lk2nd_agassi.img 
-     ( if it does not boot, try flashing lk2nd in recovery parition also )
+* **Kernel & USB:** Uses postmarketOS kernel 7.1 with Ralink modules and added support for **RTL8812AU**. The `.dtb` is configured for USB host mode (adapters work).
 
-Sorry for my bad english, I am from Romania...
+* **USB Networking:** Due to the USB host mode modifications, USB networking does not work.
+
+* **Wi-Fi:** If Wi-Fi doesn't start, check the `cust` partition on your tablet to locate the necessary `.ko.zst` files.
+
+* **Compatibility:** Tested exclusively on **AGS-W09** (2 GB RAM / 16 GB storage). **Not tested** on AGS-L09.
+
+* **Touchscreen:** Occasionally, the touch module doesn't load at boot. Simply reboot the tablet holding the power button to fix it.
+
+* **Screen Rotation:** In the top-right corner of the panel, you'll find an icon named **Rotate**—it rotates both the screen and the touch axes simultaneously.
+
+* **Gestures:** Configured `touchegg` as a background service: touching the screen with two fingers acts as a right-click.
+
+* **V-RAM / Swap:** Uses a 1 GB file for V-RAM (`/swapfile`). It is strongly recommended to leave it enabled, though you can delete it if storage is critically low (the system will run less smoothly).
+
+* **GPU & Rendering:** The GPU acts strangely in Firefox and overall UI. Everything currently runs on **software rendering**. If you can fix this or provide a patch/report, contributions are very welcome!
+
+
+
+---
+
+
+
+## ⚠️ Important Warnings & Partitioning
+
+
+
+* **EDL Backup (Mandatory Precaution):** Before making any changes or flashing, always create a full EDL backup using:
+
+  ```bash
+
+  edl rl . --loader=firehose.mbn
+
+  ```
+
+* **Storage Optimization (Risky / Optional):** A strongly recommended (but risky) tweak is to shrink the system partition to free up space (setting it to 1 MB and mapping its starting point correctly in the partition layout). Proceed only if you know what you are doing!
+
+
+
+---
+
+
+
+## 📥 Download & Installation
+
+
+
+* **USER PASSWORD:** `kali`
+
+* **USERDATA IMAGE:** [Download from Mega.nz](https://mega.nz/file/THBjwJYb#saguvIMVdS_VmLFzrKHUHLAPEDQCPdP45WMJ5iUP_9s)
+
+
+
+### Flash Instructions:
+
+1. Download `userdata_sparse` from the link above.
+
+2. Flash it via fastboot to the `userdata` partition so `lk2nd` can recognize it:
+
+   ```bash
+
+   fastboot flash userdata userdata_sparse.img
+
+   ```
+
+3. Flash the boot image (**this only works after flashing lk2nd**):
+
+   ```bash
+
+   fastboot flash boot lk2nd_agassi.img
+
+   ```
+
+   *(Note: If the tablet fails to boot, try flashing `lk2nd` into the recovery partition as well).*
+
+
+
+---
+
+
+
+*Sorry for my bad English, I am from Romania...*
