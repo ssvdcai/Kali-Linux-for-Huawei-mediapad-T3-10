@@ -4,7 +4,7 @@ linux ported via postmarket kernel 7.1.x with patches for huawei mediapad t3 10 
 
 !!! I am not an official guy that makes this kind of things, I am an 15 year old... so please consider that if it does not work. If you would like, send me any issue on xda, but  also consider that I have school and other stuff... I do this as a hobby.
 
-<img width="300" height="700" alt="85127_edit" src="https://github.com/user-attachments/assets/e0016aff-e69d-4f14-bbb2-54eb777a0495" />
+<img width="300" height="650" alt="85127_edit" src="https://github.com/user-attachments/assets/e0016aff-e69d-4f14-bbb2-54eb777a0495" />
 
 
 Added working sound, not perfect , but it works. 
