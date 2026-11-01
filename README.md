@@ -16,9 +16,9 @@ Freetube volume is weird... it chuckles like a radio, use vacuumtube... it comes
 
 If wifi does not work, look into the "cust" partition on your tablet to see the .ko.zst files necesarry. 
 
-I have not tested it for AGS-L09, only for AGS-W09 , 2 GB RAM and 16 storage.
+**I have not tested it for AGS-L09, only for AGS-W09 , 2 GB RAM and 16 storage.**
 
-A thing I strongly recommend... [but risky] is to shrink the system partition for extra storage, make it 1 MB, then put it where it should start in the partition map.
+A thing I strongly recommend... *[but risky]* is to shrink the system partition for extra storage, make it 1 MB, then put it where it should start in the partition map.
 
 Before every change, please create an edl backup with "edl rl . --loader=firehose.mbn"
 
