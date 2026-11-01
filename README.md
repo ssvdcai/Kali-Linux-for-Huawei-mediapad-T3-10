@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="CgIwvGwjpeajKNovrkgb-ymjv3n9-Fe81i-Knc6udTo" />
 # Kali Linux for Huawei MediaPad T3 10 (agassi)
 
 
