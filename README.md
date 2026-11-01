@@ -32,3 +32,6 @@ GPU is acting weirdly on firefox and everything ... If you could fix it and send
 USER PASSWORD : kali
 
 DOWNLOAD: https://mega.nz/file/THBjwJYb#saguvIMVdS_VmLFzrKHUHLAPEDQCPdP45WMJ5iUP_9s
+
+!!!ONLY WORKS AFTER fastboot flash boot lk2nd_agassi.img 
+     ( if it does not boot, try flashing lk2nd in recovery parition also )
