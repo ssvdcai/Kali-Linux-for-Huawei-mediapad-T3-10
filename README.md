@@ -15,6 +15,7 @@ Linux port built using the postmarketOS kernel (v7.1.x) with custom patches for 
 ---
 
 
+<img width="650" height="300" alt="ok_edit" src="https://github.com/user-attachments/assets/2c77623c-54b7-4644-991a-68832e107c9e" />
 
 ## 🛠️ Features & Status
 
