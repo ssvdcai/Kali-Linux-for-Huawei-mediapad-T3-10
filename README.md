@@ -32,7 +32,7 @@ IN THE RIGHT CORNER OF THE PANEL, YOU HAVE AN ICON NAMED ROTATE, IT ROTATES THE 
 
 I have used touchegg for the display as service, so when you touch the disply with two fingers, it will be counted as a right-click.
 
-It uses an 1GB file for V-RAM, as /swapfile, I strongly recomend letting it there, but if you are low on storage, you can delete it, it just wont run that smooth.
+It uses an 1GB file for V-RAM, as /swapfile, I strongly recomend letting it there, but if you are low on storage, you can delete it, it just won't run that smooth.
 
 GPU is acting weirdly on firefox and everything ... If you could fix it and send me a report of how I can fix it... you are welcome. Everything uses software rendering.
 
